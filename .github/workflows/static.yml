@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة HTML</title>
+    <style>
+        body {
+            background-color: rgb(255, 182, 193); /* تغيير لون الخلفية باستخدام RGB (لون وردي) */
+            font-family: Arial, sans-serif; /* تحديد خط للنص */
+            direction: rtl; /* الكتابة من اليمين لليسار */
+            padding: 20px;
+        }
+
+        .button {
+            background-color: red; /* لون الزر الأحمر */
+            color: white; /* النص باللون الأبيض */
+            padding: 10px 20px; /* مساحة داخلية للزر */
+            border: none; /* إزالة الحدود */
+            border-radius: 5px; /* حواف الزر دائرية */
+            cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الزر */
+            font-size: 16px; /* حجم الخط */
+        }
+
+        .button:hover {
+            background-color: darkred; /* تغيير اللون عند المرور بالماوس */
+        }
+
+        .content {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- زر باللون الأحمر -->
+    <button class="button" onclick="changeContent()">Open</button>
+
+    <div class="content" id="content">
+        <!-- النص سيظهر هنا بعد الضغط على الزر -->
+    </div>
+
+    <script>
+        function changeContent() {
+            // تغيير النص داخل الـ div
+            document.getElementById('content').innerHTML = "boom boom boom mnak majani noum aji l3ndi ntsam7ou wya ka7lat l3youne boom boom boom...";
+        }
+    </script>
+
+</body>
+</html>￼Enter
